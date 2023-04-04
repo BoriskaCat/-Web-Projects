@@ -15,6 +15,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    font-size: calc( (100vw - 22.5rem)/70 + 1rem);
 }
 
 .pg-header-banner-linked {
@@ -29,6 +31,10 @@ a {
     align-items: center;
 }
 
+.pg-header-banner-logo {
+    height: 3em;
+}
+
 .pg-header-banner-text {
     display: flex;
     flex-direction: column;
@@ -37,12 +43,12 @@ a {
 }
 
 .pg-header-banner-text-top {
-    margin: 0%;
+    margin: -0.2em 0em;
 
     font-family: 'LIBRARY-3-AM';
-    font-style: normal;
+    font-style: medium;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1em;
 
     display: flex;
     align-items: center;
@@ -56,7 +62,7 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 0.65em;
 
     display: flex;
     align-items: center;
@@ -70,23 +76,21 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0px 24px;
-    gap: 10px;
+    align-items: center;
     
-    width: 205px;
-    height: 35px;
+    width: 5.35em;
+    height: 0.9em;
     
-    border: 3px solid #003775;
-    border-radius: 20px;
+    border: 0.1em solid #003775;
+    border-radius: 1em;
 }
 
 .pg-header-feedback-text {
     margin: 0;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 0.53em;
     
     display: flex;
     align-items: center;
