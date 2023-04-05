@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-size: calc( (100vw - 480px) * 1.2 / 450 + 16px);
 }
 
 a {
@@ -14,21 +15,20 @@ a {
     align-items: center;
     padding: 0;
 
-    height: 20.43vh;
-    width: 100;
+    height: 160px;
+    width: 100%;
 }
 
 .header-banner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0;
 
     background: #FFFFFF;
 
-    height: 12.365vh;
-    width: 68.42%;   /* marked place */
+    height: 100px;
+    width: 100%;
 
     /* Inside auto layout */
     flex: none;
@@ -72,9 +72,6 @@ a {
     justify-content: center;
     align-items: flex-start;
     padding: 0;
-
-    /* expected standard font-size: ~20px for a 1900 x 930 screen */
-    font-size: 2.15vh;
 
     /* Inside auto layout */
     flex: none;
@@ -132,8 +129,8 @@ a {
 
     height: 100%;
 
-    border: 0.323vh solid #003775;
-    border-radius: 2.15vh;
+    border: 0.15em solid #003775;
+    border-radius: 1em;
 
     /* Inside auto layout */
     flex: none;
@@ -145,7 +142,7 @@ a {
     font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 500;
-    font-size: 2.15vh;
+    font-size: 1em;
     color: #003775;
 }
 
@@ -156,7 +153,7 @@ a {
     align-items: center;
     padding: 0;
 
-    height: 8.065vh;
+    height: 60px;
     width: 100%;
 
     background: #003775;
@@ -177,9 +174,6 @@ a {
     gap: 5.263vw;
 
     height: 100%;
-
-    /* expected standard font-size: ~24px for a 1900 x 930 screen */
-    font-size: 2.58vh;
 
     /* Inside auto layout */
     flex: none;
@@ -202,7 +196,7 @@ a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.9em;
 
     display: flex;
     align-items: center;
