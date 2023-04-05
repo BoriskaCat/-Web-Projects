@@ -8,97 +8,205 @@ a {
 }
 
 .pg-header-container {
-    padding-left: 15.625%;
-    padding-right: 15.625%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
+    height: 20.43vh;
+    width: 100;
+}
+
+.header-banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
-    font-size: calc( (100vw - 22.5rem)/70 + 1rem);
+    background: #FFFFFF;
+
+    height: 12.365vh;
+    width: 68.42%;   /* marked place */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.pg-header-banner-linked {
-    width: auto;
+.banner-brand-link {
+    height: 100%;
 }
 
-.pg-header-banner {
-    width: auto;
+.banner-brand {
+    margin: 0%;
 
     display: flex;
-    margin-left: auto;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    padding: 0;
+
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.pg-header-banner-logo {
-    height: 3em;
+.brand-logo {
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.pg-header-banner-text {
+.brand-textbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0;
+
+    /* expected standard font-size: ~20px for a 1900 x 930 screen */
+    font-size: 2.15vh;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.pg-header-banner-text-top {
+.brand-textbox-top {
+    font-family: 'library-3-am';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
     margin: -0.2em 0em;
 
-    font-family: 'LIBRARY-3-AM';
-    font-style: medium;
+    color: #003775;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.brand-textbox-bottom {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    color: #003775;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.banner-feedback-link {
+    height: 30.44%;
+}
+
+.banner-feedback {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0vh 1.563vw;
+
+    height: 100%;
+
+    border: 0.323vh solid #003775;
+    border-radius: 2.15vh;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.banner-feedback p {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.15vh;
+    color: #003775;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: 8.065vh;
+    width: 100%;
+
+    background: #003775;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu-nav-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 5.263vw;
+
+    height: 100%;
+
+    /* expected standard font-size: ~24px for a 1900 x 930 screen */
+    font-size: 2.58vh;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu-nav-panel a {
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu-nav-panel a span {
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 1em;
 
     display: flex;
     align-items: center;
-
-    color: #003775;
-}
-
-.pg-header-banner-text-bottom {
-    margin: 0%;
-
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.65em;
-
-    display: flex;
-    align-items: center;
-
-    color: #003775;
-}
-
-.pg-header-feedback { 
-    box-sizing: border-box;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    width: 5.35em;
-    height: 0.9em;
-    
-    border: 0.1em solid #003775;
-    border-radius: 1em;
-}
-
-.pg-header-feedback-text {
-    margin: 0;
-    font-family: 'M PLUS Rounded 1c';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.53em;
-    
-    display: flex;
-    align-items: center;
     text-align: center;
-    
-    color: #003775;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;  
+
+    color: #FFFFFF;
 }
