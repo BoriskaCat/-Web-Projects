@@ -1,12 +1,28 @@
+/* The layout of the main page objects is described here
+
+1. '↓↓↓' before description: One of the main 
+blocks of the page will be described. The description 
+of this block will continue until the end of the file 
+or until the next comment containing '↓↓↓'
+
+2. '↓↓' before description: A large subblock of 
+the main block of the page will be described. 
+The description of this block will continue until 
+the end of the file or until the next comment 
+containing '↓↓↓' or '↓↓' */
+
 body {
     padding: 0;
     margin: 0;
-    font-size: calc( (100vw - 480px) * 1.2 / 450 + 16px);
+    font-size: calc( (100vw - 480px) * 0.002 + 16px);
 }
 
 a {
     text-decoration: none;
 }
+
+
+/* - ↓↓↓ pg-header-container class element description section ↓↓↓ - */
 
 .pg-header-container {
     display: flex;
@@ -18,6 +34,9 @@ a {
     height: 160px;
     width: 100%;
 }
+
+
+/* - ↓↓ header-banner section description  ↓↓ - */
 
 .header-banner {
     display: flex;
@@ -80,7 +99,7 @@ a {
 }
 
 .brand-textbox-top {
-    font-family: 'library-3-am';
+    font-family: 'library 3 am';
     font-style: normal;
     font-weight: 400;
     font-size: 2em;
@@ -146,6 +165,9 @@ a {
     color: #003775;
 }
 
+
+/* - ↓↓ header-menu section description  ↓↓ - */
+
 .header-menu {
     display: flex;
     flex-direction: column;
@@ -193,14 +215,274 @@ a {
 .menu-nav-panel a span {
     height: 100%;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.95em;
 
     display: flex;
     align-items: center;
     text-align: center;
 
     color: #FFFFFF;
+}
+
+
+/* - ↓↓↓ pg-modules-container class element description section ↓↓↓ - */
+
+.pg-modules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: auto;
+    width: auto;
+}
+
+
+/* - ↓↓ module-intro section description  ↓↓ - */
+
+.module-intro {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 473px;
+    width: 100%;
+    overflow: hidden;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.intro-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 3.225vh;
+    
+    position: absolute;
+    width: 345px;
+    height: 270px;
+    left: 14.7vw;
+    top: calc(50% - 150px);
+    
+    background: rgba(0, 55, 117, 0.7);
+    border-radius: 20px;
+}
+
+.infobox-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0vh 1.6vw;
+    gap: 1.613vh;
+
+    width: auto;
+    height: 136px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.infobox-textbox-title {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.infobox-textbox-description {
+    margin: 0;
+
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.infobox-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.537vh 0vw;
+
+    width: 254px;
+    height: 47px;
+
+    background: #FAA73E;
+    border-radius: 0.5em;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.infobox-button-textbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 1.263vw;
+    gap: 0.3vw;
+    
+    width: auto;
+    height: auto;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.infobox-button-textbox-title {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.infobox-button-textbox-polygon {
+    height: 12px;
+    margin-bottom: -0.25em;
+}
+
+
+/* - ↓↓ module-about-us section description  ↓↓ - */
+
+.module-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16.13vh; 
+    padding-bottom: 6.451vh;
+    gap: 6.84vw;
+
+    height: auto;
+    width: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.about-us-photo {
+    height: 258px;
+}
+
+.about-us-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 2vh;
+
+    width: 680px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.about-us-textbox-title {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+
+    color: #003775;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.about-us-textbox-description {
+    margin: 0;
+    width: auto;
+
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+/* - ↓↓ module-editors section description  ↓↓ - */
+
+.module-editors {
+    height: auto;
+    width: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
