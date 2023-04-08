@@ -329,7 +329,6 @@ a {
     color: #FFFFFF;
 
     /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -349,7 +348,6 @@ a {
     border-radius: 0.5em;
 
     /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -404,7 +402,6 @@ a {
     align-items: center;
     padding-top: 16.13vh; 
     padding-bottom: 6.451vh;
-    gap: 6.84vw;
 
     height: auto;
     width: auto;
@@ -420,6 +417,8 @@ a {
 }
 
 .about-us-textbox {
+    margin-left: 6.84vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,7 +426,7 @@ a {
     padding: 0;
     gap: 2vh;
 
-    width: 680px;
+    width: 44.5vw;
 
     /* Inside auto layout */
     flex: none;
