@@ -276,8 +276,8 @@ a {
     gap: 3.225vh;
     
     position: absolute;
-    width: 345px;
-    height: 270px;
+    width: 21%;
+    height: 300px;
     left: 14.7vw;
     top: calc(50% - 150px);
     
@@ -340,8 +340,9 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0.537vh 0vw;
+    margin-top: 1.47vh;
 
-    width: 254px;
+    width: 73.75%;
     height: 47px;
 
     background: #FAA73E;
@@ -424,7 +425,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0;
-    gap: 2vh;
+    gap: 3vh;
 
     width: 44.5vw;
 
@@ -473,12 +474,42 @@ a {
 }
 
 
-
 /* - ↓↓ module-editors section description  ↓↓ - */
 
 .module-editors {
-    height: auto;
     width: 100%;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.editors-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 300px; */
+    gap: 3vh;
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.editors-body-headline {
+    margin-top: 11.3vh;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+
+    color: #003775;
 
     /* Inside auto layout */
     flex: none;
