@@ -22,7 +22,7 @@ a {
 }
 
 
-/* - ↓↓↓ pg-header-container class element description section ↓↓↓ - */
+/* - ↓↓↓ pg-header-container class description ↓↓↓ - */
 
 .pg-header-container {
     display: flex;
@@ -36,7 +36,7 @@ a {
 }
 
 
-/* - ↓↓ header-banner section description  ↓↓ - */
+/* - ↓↓ header-banner description  ↓↓ - */
 
 .header-banner {
     display: flex;
@@ -99,13 +99,14 @@ a {
 }
 
 .brand-textbox-top {
-    font-family: 'library 3 am';
+    margin: 0;
+
+    font-family: 'Library 3 AM';
     font-style: normal;
     font-weight: 400;
     font-size: 2em;
     display: flex;
     align-items: center;
-    margin: -0.2em 0em;
 
     color: #003775;
 
@@ -116,13 +117,14 @@ a {
 }
 
 .brand-textbox-bottom {
+    margin: 0;
+    margin-top: 0.6vh;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    margin: 0;
 
     color: #003775;
 
@@ -166,7 +168,7 @@ a {
 }
 
 
-/* - ↓↓ header-menu section description  ↓↓ - */
+/* - ↓↓ header-menu description  ↓↓ - */
 
 .header-menu {
     display: flex;
@@ -205,21 +207,14 @@ a {
 
 .menu-nav-panel a {
     height: 100%;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.menu-nav-panel a span {
-    height: 100%;
+    margin: 0;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.95em;
 
+    position: relative;
     display: flex;
     align-items: center;
     text-align: center;
@@ -228,7 +223,7 @@ a {
 }
 
 
-/* - ↓↓↓ pg-modules-container class element description section ↓↓↓ - */
+/* - ↓↓↓ pg-modules-container class description ↓↓↓ - */
 
 .pg-modules-container {
     display: flex;
@@ -242,7 +237,7 @@ a {
 }
 
 
-/* - ↓↓ module-intro section description  ↓↓ - */
+/* - ↓↓ module-intro description  ↓↓ - */
 
 .module-intro {
     position: relative;
@@ -273,11 +268,10 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0;
-    gap: 3.225vh;
     
     position: absolute;
     width: 21%;
-    height: 300px;
+    height: 285px;
     left: 14.7vw;
     top: calc(50% - 150px);
     
@@ -291,7 +285,6 @@ a {
     justify-content: center;
     align-items: flex-start;
     padding: 0vh 1.6vw;
-    gap: 1.613vh;
 
     width: auto;
     height: 136px;
@@ -309,6 +302,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 2em;
+    line-height: 5.054vh;
 
     color: #FFFFFF;
 
@@ -320,11 +314,13 @@ a {
 
 .infobox-textbox-description {
     margin: 0;
+    margin-top: 1.613vh;
 
     font-family: 'Commissioner', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
+    line-height: 2.58vh;
 
     color: #FFFFFF;
 
@@ -340,7 +336,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0.537vh 0vw;
-    margin-top: 1.47vh;
+    margin-top: 3.225vh;
 
     width: 73.75%;
     height: 47px;
@@ -394,15 +390,15 @@ a {
 }
 
 
-/* - ↓↓ module-about-us section description  ↓↓ - */
+/* - ↓↓ module-about-us description  ↓↓ - */
 
 .module-about-us {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 16.13vh; 
-    padding-bottom: 6.451vh;
+    margin-top: 16.13vh; 
+    margin-bottom: 6.451vh;
 
     height: auto;
     width: auto;
@@ -462,6 +458,7 @@ a {
     font-style: normal;
     font-weight: 300;
     font-size: 0.95em;
+    line-height: 2.58vh;
     display: flex;
     align-items: center;
 
@@ -477,8 +474,10 @@ a {
 /* - ↓↓ module-editors section description  ↓↓ - */
 
 .module-editors {
+    position: relative;
+
     width: 100%;
-    height: auto;
+    height: 87.096vh;
 
     /* Inside auto layout */
     flex: none;
@@ -486,20 +485,52 @@ a {
     flex-grow: 0;
 }
 
+/* editors-background includes gradient background and waves photo */
+.editors-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.editors-background-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #2F70BA 100%);
+}
+
+.editors-background-waves {
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Body includes the headline and 3 cards about the editors */
+
 .editors-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* padding: 0px 300px; */
     gap: 3vh;
     
-    position: absolute;
     width: 100%;
     height: 100%;
 }
 
 .editors-body-headline {
+    margin: 0;
+    
     margin-top: 11.3vh;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -515,4 +546,275 @@ a {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+
+
+/* editors-body-cards includes 3 blocks each of which includes the card about the editor. */
+
+.editors-body-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 1.613vh;
+
+    width: 100%;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* There will be 2 classes responsible for the location of the cards on the left and right, respectively */
+
+.cards-left-pos, 
+.cards-right-pos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cards-left-pos {
+    align-items: flex-start;
+}
+
+.cards-right-pos {
+    align-items: flex-end;
+}
+
+.body-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 2.632vw;
+
+    width: auto;
+    height: 145px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Left and right cards should have text centered on different edges. The indentation of the cards 
+from the edge of the page should also be located on different sides: for left cards, 'margin' will be 
+on the left and for right cards - on the right. */
+
+.cards-left-pos div {
+    margin-left: 14.7vw;
+}
+
+.cards-left-pos div div {
+    align-items: flex-start;
+}
+
+.cards-right-pos div {
+    margin-right: 14.7vw;
+}
+
+.cards-right-pos div div {
+    align-items: flex-end;
+
+    /* Inside auto layout */
+    order: 0;
+}
+
+.cards-right-pos div img {
+    /* Inside auto layout */
+    order: 1;
+}
+
+/* There was no point in creating a separate class for card-textbox */
+
+.body-card div {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: auto;
+    height: 145px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* 3 next classes describe parts of a card */
+
+.card-name {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 3.548vh;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-position {
+    margin: 0;
+
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.58vh;
+
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.card-email {
+    margin: 0;
+
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.58vh;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* - ↓↓↓ pg-footer-container class description ↓↓↓ - */
+
+.pg-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 175px;
+
+    background: #003775;
+}
+
+.footer-messangers {
+    margin-left: 14.7vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 3.158vw;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-messangers img {
+    height: 52px;
+}
+
+.footer-textbox {
+    margin-right: 14.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.54vh;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer-textbox a, p {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.7vh;
+
+    color: #D9D9D9;
+}
+
+.footer-textbox p {
+    margin-top: 0.6vh;
+}
+
+
+
+/* !!! DEMO :) - animations !!! */
+
+.menu-nav-panel a {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.menu-nav-panel a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 0.15em;
+    background-color: #faa73e;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-100%, 0, 0);
+    overflow: hidden;
+}
+
+.menu-nav-panel a:hover::after,
+.menu-nav-panel a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
