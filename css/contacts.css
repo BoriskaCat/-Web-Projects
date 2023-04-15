@@ -1,0 +1,649 @@
+/* The layout of the main page objects is described here
+
+1. '↓↓↓' before description: One of the main 
+blocks of the page will be described. The description 
+of this block will continue until the end of the file 
+or until the next comment containing '↓↓↓'
+
+2. '↓↓' before description: A large subblock of 
+the main block of the page will be described. 
+The description of this block will continue until 
+the end of the file or until the next comment 
+containing '↓↓↓' or '↓↓' */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: calc( (100vw - 480px) * 0.002 + 16px);
+    line-height: calc( (100vw - 480px) * 0.002 + 16px);;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* - ↓↓↓ pg-header-container class description ↓↓↓ - */
+
+.pg-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: 160px;
+    width: 100%;
+}
+
+
+/* - ↓↓ header-banner description  ↓↓ - */
+
+.header-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #00244C;
+
+    height: 100px;
+    width: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.banner-brand-link {
+    height: 100%;
+}
+
+.banner-brand {
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.brand-logo {
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.brand-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.brand-textbox-top {
+    margin: 0;
+
+    font-family: 'Library 3 AM';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.brand-textbox-bottom {
+    margin: 0;
+    margin-top: 0.6vh;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.banner-feedback-link {
+    height: 30.44%;
+}
+
+.banner-feedback {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0vh 1.563vw;
+
+    height: auto;
+
+    border: 0.15em solid #B2BDC9;
+    border-radius: 1em;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.banner-feedback p {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #7F91A5;
+}
+
+
+/* - ↓↓ header-menu description  ↓↓ - */
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: 60px;
+    width: 100%;
+
+    background: #003775;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu-nav-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 5.263vw;
+
+    height: 100%;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.menu-nav-panel a {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.95em;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+/* - ↓↓↓ pg-modules-container class description ↓↓↓ - */
+
+.pg-modules-container {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.684vw;
+
+    background: #00244C;
+}
+
+
+/* - ↓↓ module-contacts description  ↓↓ - */
+
+.module-contacts {
+    margin: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5.376vh 1.842vw;
+    gap: auto;
+
+    width: auto;
+    height: 590px;
+
+    background: linear-gradient(179.8deg, #003775 0.18%, #00244C 99.84%);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contacts-textbox {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 3.225vh;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contacts-textbox-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.contacts-textbox-description {
+    margin: 0;
+
+    width: 420px;
+    
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.contacts-connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.connection-num-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: auto;
+    height: auto;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.connection-num-email img {
+    margin-right: 0.79vw;
+    height: 30px;
+}
+
+.connection-num-email div {
+    padding-top: 1.612vh;
+    padding-bottom: 1.612vh;
+    padding-left: 0.79vw;
+
+    box-sizing: border-box;
+    border-left: 2px solid #FFFFFF;
+}
+
+.connection-num-email div p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.35;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.connection-messangers {
+    margin-inline: 2.63vw;
+    margin-top: 2.15vh;
+    margin-bottom: 2.15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.158vw;
+    
+    width: auto;
+    height: auto;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.connection-messangers img {
+    height: 60px;
+}
+
+/* - ↓↓ module-form description  ↓↓ - */
+
+
+.module-form {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.84vh 2.631vw;
+    gap: 3.225vh;
+
+    width: auto;
+    height: 590px;
+
+    background: linear-gradient(180deg, #003775 0%, #00244C 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.form-lane {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 3.225vh;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form-field {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2.15vh;
+    padding-bottom: 2.15vh;
+    padding-left: 2.15vh;
+    gap: 20px;
+
+    width: 16.316vw;
+    height: auto;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form-field p {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #7F91A5;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form-wide-field {
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 2.15vh;
+    padding-left: 2.15vh;
+    
+    width: calc( 32.632vw + 3.225vh );
+    height: 180px;
+    
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+.form-wide-field p {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #7F91A5;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.form-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.15vh 1.053vw;
+    gap: 10px;
+
+    width: 10.526vw;
+    height: auto;
+
+    background: #F68812;
+    border-radius: 25px;
+}
+
+.form-submit p {
+    font-family: 'M PLUS Rounded 1c';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.5;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+/* - ↓↓↓ pg-footer-container class description ↓↓↓ - */
+
+.pg-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 145px;
+
+    background: #003775;
+}
+
+.footer-textbox {
+    margin-right: 14.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.54vh;
+
+    width: auto;
+    height: auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer-textbox a, p {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.7vh;
+
+    color: #D9D9D9;
+}
+
+.footer-textbox p {
+    margin-top: 0.6vh;
+}
+
+
+
+/* !!! DEMO :) - animations !!! */
+
+.menu-nav-panel a {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.menu-nav-panel a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 0.15em;
+    background-color: #faa73e;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-100%, 0, 0);
+    overflow: hidden;
+}
+
+.menu-nav-panel a:hover::after,
+.menu-nav-panel a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

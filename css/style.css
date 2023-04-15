@@ -15,6 +15,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: calc( (100vw - 480px) * 0.002 + 16px);
+    line-height: calc( (100vw - 480px) * 0.002 + 16px);;
 }
 
 a {
@@ -148,7 +149,7 @@ a {
     margin: 0;
     padding: 0vh 1.563vw;
 
-    height: 100%;
+    height: auto;
 
     border: 0.15em solid #003775;
     border-radius: 1em;
@@ -164,6 +165,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 1em;
+    line-height: 1.5;
     color: #003775;
 }
 
@@ -477,7 +479,7 @@ a {
     position: relative;
 
     width: 100%;
-    height: 87.096vh;
+    height: auto;
 
     /* Inside auto layout */
     flex: none;
@@ -487,7 +489,9 @@ a {
 
 /* editors-background includes gradient background and waves photo */
 .editors-background {
-    position: relative;
+    position: absolute;
+    z-index: -1;
+
     width: 100%;
     height: 100%;
     left: 0;
@@ -495,19 +499,20 @@ a {
 }
 
 .editors-background-gradient {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
 
     background: linear-gradient(180deg, #FFFFFF 0%, #2F70BA 100%);
 }
 
 .editors-background-waves {
-    height: 100%;
+    width: 45%;
 
     position: absolute;
+    z-index: 0;
     right: 0;
     bottom: 0;
 }
@@ -515,9 +520,7 @@ a {
 /* Body includes the headline and 3 cards about the editors */
 
 .editors-body {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-bottom: 16.13vh;
 
     display: flex;
     flex-direction: column;
