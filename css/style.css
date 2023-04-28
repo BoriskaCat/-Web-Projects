@@ -15,7 +15,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: calc( (100vw - 480px) * 0.002 + 16px);
-    line-height: calc( (100vw - 480px) * 0.002 + 16px);;
+    line-height: calc( (100vw - 480px) * 0.002 + 16px);
 }
 
 a {

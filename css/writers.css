@@ -394,6 +394,7 @@ li {
     line-height: 1.35;
     display: flex;
     justify-content: center;
+    text-align: center;
 
     color: #000000;
 
