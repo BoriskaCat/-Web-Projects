@@ -477,13 +477,6 @@ a {
     border: 2px solid #FFFFFF;
     border-radius: 25px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.form-field p {
     font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 400;
@@ -492,14 +485,18 @@ a {
 
     display: flex;
     align-items: center;
-    text-align: center;
 
+
+    background-color: transparent;
     color: #7F91A5;
+}
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.form-field::placeholder, .form-wide-field::placeholder {
+    color: #7F91A5;
+}
+
+.form-field:focus, .form-wide-field:focus {
+    outline: none;
 }
 
 .form-wide-field {
@@ -516,9 +513,7 @@ a {
     
     border: 2px solid #FFFFFF;
     border-radius: 25px;
-}
 
-.form-wide-field p {
     font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 400;
@@ -527,15 +522,11 @@ a {
     
     display: flex;
     align-items: center;
-    text-align: center;
     
+    background-color: transparent;
     color: #7F91A5;
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
+    resize: none;
 }
 
 .form-submit {
@@ -549,11 +540,10 @@ a {
     width: 10.526vw;
     height: auto;
 
-    background: #F68812;
-    border-radius: 25px;
-}
+    background: transparent;
+    border-radius: 15px;
+    border: none;
 
-.form-submit p {
     font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 500;
@@ -565,11 +555,6 @@ a {
     text-align: center;
     
     color: #FFFFFF;
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 
@@ -648,4 +633,19 @@ a {
 .menu-nav-panel a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.form-submit {
+    border-color: #F68812;
+    box-shadow: 0 0 40px 40px #F68812 inset, 0 0 0 0 #F68812;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.form-submit:hover {
+    box-shadow: 0 0 10px 0 #F68812 inset, 0 0 10px 4px #F68812;
+}
+
+.footer-textbox a:hover {
+    text-decoration: underline;
 }
