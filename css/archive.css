@@ -11,6 +11,10 @@ The description of this block will continue until
 the end of the file or until the next comment 
 containing '↓↓↓' or '↓↓' */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -41,6 +45,10 @@ li {
     width: 100%;
 }
 
+.header_burger {
+    display: none;
+}
+
 
 /* - ↓↓ header-banner description  ↓↓ - */
 
@@ -54,6 +62,8 @@ li {
 
     height: 100px;
     width: 100%;
+
+    max-width: 1920px;
 
     /* Inside auto layout */
     flex: none;
@@ -111,6 +121,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 2em;
+    line-height: 2rem;
     display: flex;
     align-items: center;
 
@@ -129,6 +140,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 1.2em;
+    line-height: 1.2rem;
     display: flex;
     align-items: center;
 
@@ -158,14 +170,14 @@ li {
 
     border: 0.15em solid #003775;
     border-radius: 1em;
+    background-color: #FFFFFF;
+    transition: all 0.15s ease; 
 
     /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
-}
 
-.banner-feedback p {
     font-family: 'M PLUS Rounded 1c';
     font-style: normal;
     font-weight: 500;
@@ -205,6 +217,7 @@ li {
     gap: 5.263vw;
 
     height: 100%;
+    max-width: 1920px;
 
     /* Inside auto layout */
     flex: none;
@@ -220,6 +233,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 0.95em;
+    line-height: 0.95rem;
 
     position: relative;
     display: flex;
@@ -227,6 +241,20 @@ li {
     text-align: center;
 
     color: #FFFFFF;
+}
+
+
+/* - ↓↓↓ pg-modules-container class description ↓↓↓ - */
+
+.pg-modules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    height: auto;
+    width: auto;
 }
 
 
@@ -276,26 +304,22 @@ li {
 }
 
 .intro-background {
+    position: absolute;
+
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.intro-infobox {
+.intro-obtaining {
+    position: relative;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0;
-    
-    position: absolute;
-    width: 21%;
-    height: 285px;
-    left: 14.7vw;
-    top: calc(50% - 150px);
-    
-    background: rgba(0, 55, 117, 0.7);
-    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
 }
 
 .intro-infobox {
@@ -308,16 +332,15 @@ li {
     position: absolute;
     width: auto;
     height: auto;
-    left: 14.7vw;
-    top: calc(50% - 150px);
+    margin-left: 14.7%;
 
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
 
 .intro-infobox-text-top {
-    margin-top: 1.72vh;
-    margin-inline: 1.58vw;
+    margin-top: 16px;
+    margin-inline: 30px;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -334,8 +357,8 @@ li {
 }
 
 .intro-infobox-text-bottom {
-    margin-inline: 1.58vw;
-    margin-bottom: 3.871vh;
+    margin-inline: 30px;
+    margin-bottom: 36px;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -355,11 +378,10 @@ li {
 /* - ↓↓ module-navigation description  ↓↓ - */
 
 .module-navigation {
-    margin-top: 17.2vh;
-    margin-bottom: 17.2vh;
-    margin-inline: 14.7vw;
-    
+    margin-top: 16.3vh;
+    margin-bottom: 8.3vh;
     width: auto;
+    max-width: 1920px;
     height: auto;
 
     display: flex;
@@ -370,12 +392,13 @@ li {
 
 .navigation-sentence {
     margin-top: 1.612vh;
+    margin-left: 14.7%;
 
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.2em;
-    line-height: 1.375;
+    line-height: 1.375rem;
 
     color: #000000;
 
@@ -389,6 +412,7 @@ li {
     padding: 0;
     margin-top: 1.612vh;
     margin-bottom: 1.612vh;
+    margin-inline: 14.7%;
 
     background: rgba(47, 112, 186, 0.3);
     border-radius: 20px;
@@ -398,6 +422,8 @@ li {
     justify-content: space-around;
     align-items: center;
 
+    width: auto;
+
     /* Inside auto layout */
     flex: none;
     order: 1;
@@ -405,9 +431,9 @@ li {
 }
 
 .navigation-panel li {
-    margin-top: 1.075vh;
-    margin-bottom: 1.075vh;
-    margin-inline: 2.105vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-inline: 30px;
 
     align-items: center;
     vertical-align: middle;
@@ -430,19 +456,21 @@ li {
 
 .module-year {
     margin-top: 8vh;
-    margin-inline: 14.7vw;;
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
 
     height: auto;
-    width: auto;
+    width: 100%;
+    max-width: 1920px;
+
+    flex: 1 1;
 }
 
 .year-title {
     margin: 0;
-    margin-right: 0.526vw;
+    padding-right: 0.526vw;
 
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -453,20 +481,21 @@ li {
     color: #000000;
 }
 
+.library-obtaining {
+    padding-left: 30px;
+
+    width: 60%;
+
+    border-left: 3px solid #B3B3B3;
+}
+
 .year-library {
-    padding-left: 3.685vw;
-
-    box-sizing: border-box;
-
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 5.79vw;
-    
-    width: auto;
-    height: auto;
-    
-    border-left: 3px solid #B3B3B3;
+
+    width: 100%;
     
     /* Inside auto layout */
     flex: none;
@@ -499,11 +528,12 @@ li {
 
 .issue-infobox {
     margin: 0;
-    margin-top: 3.225vh;
+    margin-top: 5%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 
     width: auto;
     height: auto;
@@ -519,7 +549,7 @@ li {
     font-style: normal;
     font-weight: 600;
     font-size: 1.2em;
-    line-height: 1.375;
+    line-height: 1.375rem;
 
     color: #000000;
 
@@ -530,7 +560,7 @@ li {
 }
 
 .issue-infobox-button {
-    margin-top: 1.612vh;
+    margin-top: 1.612%;
 
     box-sizing: border-box;
 
@@ -553,15 +583,15 @@ li {
 }
 
 .issue-infobox-button-textbox {
-    margin-top: 1.075vh;
-    margin-bottom: 1.075vh;
-    margin-inline: 3.237vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-inline: 60px;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.3vw;
+    gap: 6px;
 
     width: auto;
     height: auto;
@@ -577,7 +607,7 @@ li {
     font-style: normal;
     font-weight: 500;
     font-size: 1.2em;
-    line-height: 1.8;
+    line-height: 1.8rem;
     
     display: flex;
     align-items: center;
@@ -601,18 +631,24 @@ li {
 
 .pg-footer-container {
     display: flex;
+    justify-content: center;
+    background: #003775;
+    width: 100%;
+}
+
+.footer-obtaining {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
     height: 175px;
-
-    background: #003775;
+    max-width: 1920px;
 }
 
 .footer-messangers {
-    margin-left: 14.7vw;
+    margin-left: 14.7%;
 
     display: flex;
     flex-direction: row;
@@ -632,10 +668,12 @@ li {
 
 .footer-messangers img {
     height: 52px;
+    border-radius: 30px;
+    background-color: transparent;
 }
 
 .footer-textbox {
-    margin-right: 14.7vw;
+    margin-right: 14.7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -658,7 +696,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 2.7vh;
+    line-height: 1.2rem;
 
     color: #D9D9D9;
 }
@@ -673,7 +711,7 @@ div#year-2022 {
 
 
 
-/* !!! DEMO :) - animations !!! */
+/* !!! animations !!! */
 
 .menu-nav-panel a {
     transition: 0.3s;
@@ -698,4 +736,272 @@ div#year-2022 {
 .menu-nav-panel a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.banner-feedback-link figure:hover {
+    box-shadow: 0 0 10px 2px #9fbddf;
+}
+
+.navigation-panel li a {
+    transition: all 0.3s;
+}
+
+.navigation-panel li a:hover {
+    text-decoration: underline 2px;
+}
+
+.issue-infobox-button {
+    transition: all 0.15s;
+}
+
+.issue-infobox-button:hover {
+    box-shadow: 0 0 10px 3px #9fbddf;
+}
+
+.footer-link img {
+    transition: all 0.15s;
+}
+
+.footer-link img:hover
+{
+    box-shadow: 0 0 10px 0 #4680c2 inset, 0 0 10px 4px #4680c2;
+}
+
+.footer-textbox a:hover {
+    text-decoration: underline;
+}
+
+.footer-textbox a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1500px) {
+    .module-year {
+        width: 1000px;
+        justify-content: flex-start;
+    }
+
+    .year-library {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .brand-textbox-top {
+        order: 1;
+        color: #FFFFFF;
+    }
+
+    .pg-header-container {
+        height: 65px;
+    }
+
+
+    .brand-logo {
+        order: 0;
+        margin-left: 20px;
+    }
+
+    .brand-textbox {
+        display: none;
+    }
+
+    .header-banner {
+        margin: 0 10px;
+        height: 65px;
+        justify-content: space-between;
+        background-color: #003775;
+
+        z-index: 5;
+    }
+
+    .header-banner .banner-feedback-link {
+        display: none;
+    }
+
+    .banner-feedback {
+        border: none;
+    }
+
+    .header-menu {
+        position: absolute;
+        top: -200px;
+        right: 0;
+        height: auto;
+        border-bottom: 2px solid #003775;
+        background-color: #FFFFFF;
+        padding-bottom: 20px;
+
+        z-index: 3;
+
+        transition: all 0.5s;
+    }
+
+    .header-menu.active {
+        top: 66px;
+    }
+
+    .menu-nav-panel {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .menu-nav-panel a {
+        color: #003775;
+    }
+
+    .header_burger {
+        margin-right: 25px;
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 15px;
+
+        z-index: 1;
+        order: 2;
+    }
+
+    .header_burger::after,
+    .header_burger::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+
+        background-color: #FFFFFF;
+        transition: all 0.5s;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 6.5px;
+
+        transition: all 0.5s;
+    }
+
+    .header_burger::after {
+        bottom: 0;
+    }
+
+    .header_burger::before {
+        top: 0;
+    }
+
+    .header_burger.active::before{
+        transform: rotate(45deg);
+        top: 6.5px;
+    }
+
+    .header_burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 6.5px;
+    }
+
+    .header_burger.active span{
+        transform: scale(0);
+    }
+
+    .module-intro {
+        height: 350px;
+    }
+
+    .module-navigation {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .navigation-sentence {
+        margin-left: 10px;
+    }
+
+    .navigation-panel {
+        margin-inline: 10px;
+    }
+
+    .module-year {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 50px;
+
+        width: auto;
+    }
+
+    .year-title {
+        margin-left: 0;
+        padding-right: 0;
+
+        text-align: center;
+    }
+
+    .year-library {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .library-obtaining {
+        border-left: none;
+        border-top: 3px solid #B3B3B3;
+
+        margin-top: 20px;
+        padding-left: 0;
+
+        width: 90%;
+    }
+
+    .library-issue {
+        margin-top: 40px;
+    }
+
+    .issue-cover {
+        height: auto;
+        width: 100%;
+    }
+
+    .issue-infobox {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .issue-infobox-button {
+        width: 120%;
+    }
+
+    .footer-obtaining {
+        height: 210px;
+
+        flex: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-messangers {
+        justify-content: center;
+
+        margin: 0;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .footer-textbox {
+        align-items: flex-start;
+
+        margin: 0;
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    .modules-background {
+        width: 80%;
+    }
 }
