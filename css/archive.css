@@ -915,7 +915,7 @@ div#year-2022 {
 
     .module-navigation {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     .navigation-sentence {
@@ -931,7 +931,7 @@ div#year-2022 {
         justify-content: center;
         align-items: center;
 
-        margin-top: 50px;
+        margin-top: 100px;
 
         width: auto;
     }
