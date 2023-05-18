@@ -128,6 +128,10 @@ a {
     flex-grow: 0;
 }
 
+.second_brand-textbox-top{
+    display: none;
+}
+
 .brand-textbox-bottom {
     margin: 0;
     margin-top: 0.6vh;
@@ -922,6 +926,12 @@ on the left and for right cards - on the right. */
 }
 
 @media screen and (max-width: 768px) {
+    .second_brand-textbox-top{
+        display: flex;
+        order: 1;
+        color: #FFFFFF;
+    }
+
     .brand-textbox-top {
         order: 1;
         color: #FFFFFF;

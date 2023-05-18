@@ -6,6 +6,19 @@ $(document).ready(function() {
     });
 
     if ($(document).width() <= 1250) {
-        $('.header-banner').append((document).getElementsByClassName('brand-textbox-top'));
+        $('#second_title').css('display', 'flex');
     }
+    else{
+        $('#second_title').css('display', 'none');
+    } 
+    
+    /* Функция resize запускает функцию при изменении масшатаба*/
+    $(window).resize(function() {
+        if ($(document).width() <= 1250) {
+            $('#second_title').css('display', 'flex');
+        }
+        else{
+            $('#second_title').css('display', 'none');
+        } 
+    });
 });
