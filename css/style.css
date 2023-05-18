@@ -966,6 +966,12 @@ on the left and for right cards - on the right. */
 
     .banner-feedback {
         border: none;
+
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.95em;
+        line-height: 0.95rem;
     }
 
     .header-menu {

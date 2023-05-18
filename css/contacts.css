@@ -11,7 +11,15 @@ The description of this block will continue until
 the end of the file or until the next comment 
 containing '↓↓↓' or '↓↓' */
 
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
     padding: 0;
     margin: 0;
     font-size: calc( (100vw - 480px) * 0.002 + 16px);
@@ -253,6 +261,7 @@ a {
 
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 
     background-color: #00244C;
 }
@@ -731,7 +740,7 @@ a {
         order: 1;
         color: #FFFFFF;
     }
-    
+
     .brand-textbox-top {
         order: 1;
         color: #FFFFFF;
@@ -765,6 +774,13 @@ a {
 
     .banner-feedback {
         border: none;
+
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.95em;
+        line-height: 0.95rem;
+        color: #00244C;
     }
 
     .header-menu {
