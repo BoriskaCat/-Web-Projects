@@ -19,22 +19,26 @@
 <body>
     
     <div class="pg-header-container">
-        <div class="header-banner">
-            <a class="banner-brand-link" href="index.html">
-                <figure class="banner-brand">
-                    <img class="brand-logo" src="images/logo.png" alt="logo">
-                    <div class="brand-textbox">
-                        <p class="brand-textbox-top">ЖУРНАЛ</p>
-                        <p class="brand-textbox-bottom">по защите в чрезвычайные ситуации</p>
-                    </div>
-                </figure>
-            </a>
+        <div class="header-obtaining">
+            <div class="header-banner">
+                <a class="banner-brand-link" href="index.html">
+                    <figure class="banner-brand">
+                        <img class="brand-logo" src="images/logo.png" alt="logo">
+                        <div class="brand-textbox">
+                            <p class="brand-textbox-top">ЖУРНАЛ</p>
+                            <p class="brand-textbox-bottom">по защите в чрезвычайные ситуации</p>
+                        </div>
+                    </figure>
+                </a>
 
-            <a class="banner-feedback-link" href="contacts.html">
-                <figure class="banner-feedback">
-                    <p>Обратная связь</p>
-                </figure>
-            </a>
+                <a class="banner-feedback-link" href="contacts.html">
+                    <figure class="banner-feedback">Обратная связь</figure>
+                </a>
+
+                <div class="header_burger">
+                    <span></span>
+                </div>
+            </div>
         </div>
 
         <div class="header-menu">
@@ -46,69 +50,76 @@
         </div>
     </div>
 
-    <div class="pg-modules-container">
-        <div class="module-contacts">
-            <div class="contacts-textbox">
-                <p class="contacts-textbox-title">Связь с нами </p>
-                <p class="contacts-textbox-description">Для начала работы нам надо поговорить. Достаточно рассказать о своем 
-                    проекте, указать контакты, и мы свяжемся, чтобы все обсудить.</p>
-            </div>
+    <div class="pg-modules-container-obtaining">
+        <div class="pg-modules-container">
+            <div class="module-contacts">
+                <div class="contacts-textbox">
+                    <p class="contacts-textbox-title">Связь с нами </p>
+                    <p class="contacts-textbox-description">Для начала работы нам надо поговорить. Достаточно рассказать о своем 
+                        проекте, указать контакты, и мы свяжемся, чтобы все обсудить.</p>
+                </div>
 
-            <div class="contacts-connection">
-                <div class="connection-num-email">
-                    <img src="icons/phone_icon.png" alt="phone_icon">
-                    <div>
-                        <p>+7 (800) 555-35-35</p>
+                <div class="contacts-connection">
+                    <div class="connection-num-email">
+                        <img src="icons/phone_icon.png" alt="phone_icon">
+                        <div>
+                            <p>+7 (800) 555-35-35</p>
+                        </div>
+                    </div>
+
+                    <div class="connection-num-email">
+                        <img src="icons/envelope_icon.png" alt="letter_icon">
+                        <div>
+                            <p>n.v.kuznetsov@spbu.ru</p>
+                        </div>
+                    </div>
+
+                    <div class="connection-messangers">
+                        <a class="connection-link" href="https://www.whatsapp.com/">
+                            <img src="icons/msg-wa.png">
+                        </a>
+                
+                        <a class="connection-link" href="https://vk.com/feed">
+                            <img src="icons/msg-vk.png">
+                        </a>
+                
+                        <a class="connection-link" href="https://telegram.org/">
+                            <img src="icons/msg-tg.png">
+                        </a>
                     </div>
                 </div>
-
-                <div class="connection-num-email">
-                    <img src="icons/envelope_icon.png" alt="letter_icon">
-                    <div>
-                        <p>n.v.kuznetsov@spbu.ru</p>
-                    </div>
-                </div>
-
-                <div class="connection-messangers">
-                    <a class="connection-link" href="https://www.whatsapp.com/">
-                        <img src="icons/msg-wa.png">
-                    </a>
-            
-                    <a class="connection-link" href="https://vk.com/feed">
-                        <img src="icons/msg-vk.png">
-                    </a>
-            
-                    <a class="connection-link" href="https://telegram.org/">
-                        <img src="icons/msg-tg.png">
-                    </a>
-                </div>
             </div>
+
+            <form class="module-form">
+                <div class="form-lane">
+                    <input type="text" class="form-field" placeholder="Имя">
+                    <input type="text" class="form-field" placeholder="Организация (необяз.)">
+                </div>
+
+                <div class="form-lane">
+                    <input type="text" class="form-field" placeholder="Эл. почта">
+                    <input type="text" class="form-field" placeholder="Тел. / Мессенджер">
+                </div>
+
+                <textarea class="form-wide-field" placeholder="Короткое сообщение"></textarea>
+
+                <button class="form-submit">Отправить</button>
+            </form>
         </div>
-
-        <form class="module-form">
-            <div class="form-lane">
-                <input type="text" class="form-field" placeholder="Имя">
-                <input type="text" class="form-field" placeholder="Организация (необяз.)">
-            </div>
-
-            <div class="form-lane">
-                <input type="text" class="form-field" placeholder="Эл. почта">
-                <input type="text" class="form-field" placeholder="Тел. / Мессенджер">
-            </div>
-
-            <textarea class="form-wide-field" placeholder="Короткое сообщение"></textarea>
-
-            <button class="form-submit">Отправить</button>
-        </form>
     </div>
 
     <div class="pg-footer-container">
-        <div class="footer-textbox">
-            <a href="https://www.bbc.co.uk/usingthebbc/privacy/">Политика конфиденциальности</a>
-            <a href="https://bbcnews.bbcstudios.com/">Размещение рекламы</a>
-            <p>Copyright © 2023 Журнал</p>
+        <div class="footer-obtaining">
+            <div class="footer-textbox">
+                <a href="https://www.bbc.co.uk/usingthebbc/privacy/">Политика конфиденциальности</a>
+                <a href="https://bbcnews.bbcstudios.com/">Размещение рекламы</a>
+                <p>Copyright © 2023 Журнал</p>
+            </div>
         </div>
     </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
