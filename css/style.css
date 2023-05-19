@@ -972,6 +972,9 @@ on the left and for right cards - on the right. */
         font-weight: 400;
         font-size: 0.95em;
         line-height: 0.95rem;
+
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 
     .header-menu {
@@ -994,7 +997,6 @@ on the left and for right cards - on the right. */
 
     .menu-nav-panel {
         padding-top: 20px;
-        padding-bottom: 20px;
         flex-direction: column;
 
         gap: 40px;

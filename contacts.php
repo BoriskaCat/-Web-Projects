@@ -31,7 +31,7 @@
                     </figure>
                 </a>
 
-                <a class="banner-feedback-link" href="contacts.html">
+                <a class="banner-feedback-link" href="contacts.php">
                     <figure class="banner-feedback">Обратная связь</figure>
                 </a>
 
@@ -92,20 +92,20 @@
                 </div>
             </div>
 
-            <form class="module-form">
+            <form id="form" class="module-form">
                 <div class="form-lane">
-                    <input type="text" class="form-field" placeholder="Имя">
-                    <input type="text" class="form-field" placeholder="Организация (необяз.)">
+                    <input name="name" class="form-field" placeholder="Имя" required>
+                    <input name="org" class="form-field" placeholder="Организация (необяз.)">
                 </div>
 
                 <div class="form-lane">
-                    <input type="text" class="form-field" placeholder="Эл. почта">
-                    <input type="text" class="form-field" placeholder="Тел. / Мессенджер">
+                    <input name="email" class="form-field" placeholder="Эл. почта" required>
+                    <input name="contact" class="form-field" placeholder="Тел. / Мессенджер" required>
                 </div>
 
-                <textarea class="form-wide-field" placeholder="Короткое сообщение"></textarea>
+                <textarea name="text" class="form-wide-field" placeholder="Короткое сообщение" required></textarea>
 
-                <button class="form-submit">Отправить</button>
+                <button id="button" class="form-submit">Отправить</button>
             </form>
         </div>
     </div>
@@ -121,7 +121,9 @@
     </div>
 
     <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script_submit.js"></script>
 
 </body>
 </html>
